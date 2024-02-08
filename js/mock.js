@@ -1,15 +1,15 @@
 const mockVideos = [
   {
     id: 1,
-    vid: 524933864,
-    url: "https://player.vimeo.com/video/524933864",
+    vid: 824804225,
+    url: "https://player.vimeo.com/video/824804225",
     time: 0,
     active: false,
   },
   {
     id: 2,
-    vid: 516640630,
-    url: "https://player.vimeo.com/video/516640630",
+    vid: 824804225,
+    url: "https://player.vimeo.com/video/824804225",
     time: 0,
     active: false,
   },
