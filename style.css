@@ -1,0 +1,114 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: block;
+  width: 414px;
+  object-fit: cover;
+}
+
+.slider__img {
+  width: 414px;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.popup-content {
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  top: 40px;
+}
+
+.popup-content__video {
+  padding: 20px;
+}
+
+.close-popup {
+  display: block;
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.close-popup::after,
+.close-popup::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #a30000;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-popup::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 27px;
+  left: 45%;
+}
+
+.pagination-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #333;
+}
+
+.popup-content__video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}

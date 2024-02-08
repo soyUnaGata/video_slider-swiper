@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@^6.11.0/dist/css/swiper.min.css"> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide slide-img">
+                <div id="video1"></div>
+                <!-- <iframe id="videoContainer" src="https://player.vimeo.com/video/824804225?dnt=true" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe> -->
+            </div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            <div class="swiper-slide slide-img"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+      </div>
+
+      <div class="popup" id="popup">
+            <button class="close-popup" id="closePopup"></button>
+            <div class="popup-content">
+                <div class="popup-content__video">
+                    <iframe class="popup-video__player" src="" width="100%" height="100%" frameborder="0" allowfullscreen allow="autoplay; encrypted-media"></iframe>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="pagination-dot" id="dot-1"></button>
+                <button class="pagination-dot" id="dot-2"></button>
+                <button class="pagination-dot" id="dot-3"></button>
+                <button class="pagination-dot" id="dot-4"></button>
+                <button class="pagination-dot" id="dot-5"></button>
+                <button class="pagination-dot" id="dot-6"></button>
+                <button class="pagination-dot" id="dot-7"></button>
+                <button class="pagination-dot" id="dot-8"></button>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@^6.11.0/dist/js/swiper.min.js"></script> -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
